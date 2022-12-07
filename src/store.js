@@ -9,7 +9,6 @@ export default new Vuex.Store({
         userId: '',
         userNome:'',
         userEmail: '',
-        userPerfils:'',
         perfil: '',
         logged: false,
         showNav:false,
@@ -35,10 +34,6 @@ export default new Vuex.Store({
         setUserEmail(state, payload) {
             window.localStorage.userEmail = payload;
             state.userEmail = payload;
-        },
-        setUserPerfils(state, payload) {
-            window.localStorage.userPerfils = payload;
-            state.userPerfils = payload;
         },
         setPerfil(state, payload) {
             window.localStorage.perfil = payload;
