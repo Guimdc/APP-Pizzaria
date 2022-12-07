@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid>
+    <v-container fluid v-if="this.$store.state.perfil=='admin'">
         <v-row justify="center" height="100vh">
             <v-col cols="12" lg="10" md="10" sm="12" class="col d-flex">
                 <div class="div2 flex-column d-flex align-center">
@@ -13,11 +13,6 @@
                             <v-icon color="white" class="mr-1">mdi-format-list-bulleted-square
                             </v-icon>
                             <h4 class="white--text">Pedidos</h4>
-                        </v-btn>
-                        <v-btn class="mr-2" @click="goAdmin()">
-                            <v-icon class="mr-1">mdi-cog-outline
-                            </v-icon>
-                            <h4>Organização</h4>
                         </v-btn>
                         <v-btn class="mr-2" color="error" @click="logout()">
                             <v-icon class="mr-1">mdi-logout-variant

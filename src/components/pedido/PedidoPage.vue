@@ -91,8 +91,8 @@ export default {
                 this.post(`/pedido/`, { massa: this.selectMassa, borda: this.selectBorda, id: this.$store.state.userId, tamanho: this.selectTamanho.tamanho, status: "Em produção", sabor: this.selectSabores }).then((response) => {
                     this.selectBorda = "";
                     this.selectMassa = "";
-                    this.selectTamanho = "";
-                    this.selectSabores = "";
+                    this.selectTamanho = {};
+                    this.selectSabores = [];
                 })
             }
         },
